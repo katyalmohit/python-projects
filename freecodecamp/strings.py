@@ -1,0 +1,10 @@
+phrase = "This is not a joke"
+print(phrase.capitalize())
+print(phrase.casefold())
+print(len(phrase))
+print(phrase.upper())
+print(phrase.lower())
+print(phrase.isupper())
+print(phrase.upper().isupper())
+print(phrase[8])
+print(phrase.index("is not a"))
