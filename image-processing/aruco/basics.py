@@ -6,8 +6,12 @@ import numpy as np
 dictionary = aruco.Dictionary_get(aruco.DICT_6X6_250)
 
 # Generate the marker
-markerImage = np.zeros((250,250), dtype=np.uint8)
-markerImage = aruco.drawMarker(dictionary, 33, 200, markerImage, 1)
+markerImage = np.zeros((20,20), dtype=np.uint8)
+markerImage = aruco.drawMarker(dictionary, 200, 200, markerImage, 1)
 
 # Save the marker to an image file
 cv.imwrite("marker33.png", markerImage)
+
+# Display the marker to the screen
+cv.imshow("Marker", markerImage)
+cv.waitKey(0)
